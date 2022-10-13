@@ -1,7 +1,8 @@
-﻿using EmployeeWebAPI.Entities;
+﻿using EmployeeDAL.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EmployeeWebAPI.Data.Configurations
+namespace EmployeeDAL.Data.Configurations
 {
     public class EmployeeConfiguration : IEntityTypeConfiguration<Employee>
     {

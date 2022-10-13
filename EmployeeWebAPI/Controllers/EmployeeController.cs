@@ -1,6 +1,8 @@
-﻿using EmployeeWebAPI.Entities;
+﻿using EmployeeDAL.Data;
+using EmployeeDAL.Models;
 using EmployeeWebAPI.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeWebAPI.Controllers
 {

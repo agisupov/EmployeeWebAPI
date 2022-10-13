@@ -1,5 +1,5 @@
-global using EmployeeWebAPI.Data;
-global using Microsoft.EntityFrameworkCore;
+using EmployeeBL;
+using EmployeeDAL;
 
 namespace EmployeeWebAPI
 {
@@ -10,15 +10,18 @@ namespace EmployeeWebAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<DataContext>(options =>
-            {
-                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            //Dependency Injection
+            var businessLogicModule = new BusinessLogicModule();
+            businessLogicModule.RegisterDependencies(builder.Services);
+
+            var dataAccessLayerModule = new DataAccessLayerModule(builder.Configuration);
+            dataAccessLayerModule.RegisterDependencies(builder.Services);
 
             var app = builder.Build();
 

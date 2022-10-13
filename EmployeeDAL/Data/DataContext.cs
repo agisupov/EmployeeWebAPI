@@ -1,7 +1,8 @@
-﻿using EmployeeWebAPI.Data.Configurations;
-using EmployeeWebAPI.Entities;
+﻿using EmployeeDAL.Models;
+using EmployeeDAL.Data.Configurations;
+using Microsoft.EntityFrameworkCore;
 
-namespace EmployeeWebAPI.Data
+namespace EmployeeDAL.Data
 {
     public class DataContext : DbContext
     {

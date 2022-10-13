@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeWebAPI", "EmployeeWebAPI\EmployeeWebAPI.csproj", "{993CE6E4-8C2B-47AD-A10E-A5FF24812680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeWebAPI", "EmployeeWebAPI\EmployeeWebAPI.csproj", "{993CE6E4-8C2B-47AD-A10E-A5FF24812680}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EmployeeShared", "EmployeeShared\EmployeeShared.shproj", "{9A9D80BA-F5C5-4FEC-8CC8-4D7329630BAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDAL", "EmployeeDAL\EmployeeDAL.csproj", "{F7D4669E-CC32-4585-AE69-C5F9386FEE86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBL", "EmployeeBL\EmployeeBL.csproj", "{A68A3D19-1EDE-4914-ABFD-5944C4E02DEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +21,23 @@ Global
 		{993CE6E4-8C2B-47AD-A10E-A5FF24812680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{993CE6E4-8C2B-47AD-A10E-A5FF24812680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{993CE6E4-8C2B-47AD-A10E-A5FF24812680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D4669E-CC32-4585-AE69-C5F9386FEE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D4669E-CC32-4585-AE69-C5F9386FEE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D4669E-CC32-4585-AE69-C5F9386FEE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D4669E-CC32-4585-AE69-C5F9386FEE86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68A3D19-1EDE-4914-ABFD-5944C4E02DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68A3D19-1EDE-4914-ABFD-5944C4E02DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68A3D19-1EDE-4914-ABFD-5944C4E02DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68A3D19-1EDE-4914-ABFD-5944C4E02DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {120A7D34-722F-4ABD-A3F8-25FDDD75A917}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		EmployeeShared\EmployeeShared.projitems*{9a9d80ba-f5c5-4fec-8cc8-4d7329630bab}*SharedItemsImports = 13
+		EmployeeShared\EmployeeShared.projitems*{f7d4669e-cc32-4585-ae69-c5f9386fee86}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
